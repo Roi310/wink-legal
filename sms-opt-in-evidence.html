@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wink — SMS Opt-In Evidence</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 640px; margin: 2em auto; padding: 0 1.2em; color: #1c1c1e; line-height: 1.55; }
+  h1 { font-size: 1.4em; }
+  .phone { border: 1px solid #d1d1d6; border-radius: 16px; padding: 1.4em 1.2em; margin: 1.6em 0; background: #f9f9fb; }
+  .phone h2 { margin: 0 0 .4em; font-size: 1.15em; }
+  .phone p.sub { color: #636366; font-size: .95em; margin: 0 0 1em; }
+  .field { background: #fff; border: 1px solid #c7c7cc; border-radius: 10px; padding: .8em 1em; font-size: 1.05em; color: #3a3a3c; margin-bottom: .9em; }
+  .btn { background: #0a84ff; color: #fff; text-align: center; border-radius: 12px; padding: .85em; font-weight: 600; font-size: 1.05em; margin-bottom: 1em; }
+  .disclosure { font-size: .82em; color: #636366; }
+  .note { background: #eef4ff; border-left: 4px solid #0a84ff; padding: .8em 1em; margin: 1.4em 0; font-size: .95em; }
+  footer { margin-top: 2.5em; font-size: .85em; color: #8e8e93; }
+</style>
+</head>
+<body>
+<h1>Wink — SMS Opt-In Evidence</h1>
+<p>This page documents how Wink users consent to receive SMS verification codes. Consent happens <strong>inside the Wink mobile app</strong> (iOS/Android); there is no website form, keyword, or QR-code opt-in.</p>
+
+<div class="note"><strong>Opt-in method:</strong> In-app consent (Twilio campaign opt-in method: <em>Other</em>). The user enters their own mobile number and taps <strong>"Send code"</strong>, which is the affirmative opt-in action.</div>
+
+<h2>What the user sees</h2>
+<p>During signup or sign-in, the user reaches the phone-verification screen, recreated below:</p>
+
+<div class="phone">
+  <h2>Verify your phone</h2>
+  <p class="sub">Enter your mobile number and we'll text you a one-time verification code.</p>
+  <div class="field">+1 (___) ___-____</div>
+  <div class="btn">Send code</div>
+  <p class="disclosure">By tapping "Send code" you agree to receive a one-time SMS verification code from Wink. Message frequency: only when you request a code. Message and data rates may apply. Reply STOP to opt out, HELP for help. See our <a href="https://roi310.github.io/wink-legal/privacy-policy.html">Privacy Policy</a> and <a href="https://roi310.github.io/wink-legal/terms-of-service.html">Terms of Service</a>.</p>
+</div>
+
+<h2>Opt-in flow</h2>
+<ol>
+  <li>User installs the Wink app and creates an account (18+ age gate).</li>
+  <li>On the phone-verification screen, the user enters their own mobile phone number.</li>
+  <li>The user taps <strong>"Send code"</strong> — this tap is the explicit consent to receive one SMS verification code.</li>
+  <li>Wink sends exactly one transactional SMS containing the verification code (valid 10 minutes).</li>
+  <li>No marketing or promotional messages are ever sent. Codes are sent only when the user requests one.</li>
+</ol>
+
+<h2>Opt-out</h2>
+<p>Users can opt out at any time by replying <strong>STOP</strong>. Replying <strong>HELP</strong> returns help information. Every verification SMS includes "Reply STOP to opt out."</p>
+
+<footer>
+  <p>Wink is operated by <strong>Andrew Maunger</strong>, a sole proprietor doing business as <strong>Wink</strong>. Contact: <strong>amaunger@hotmail.com</strong>.</p>
+  <p>Evidence prepared September 30, 2026 for Twilio A2P 10DLC campaign registration (Sole Proprietor).</p>
+</footer>
+</body>
+</html>
